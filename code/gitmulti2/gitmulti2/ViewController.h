@@ -12,6 +12,8 @@
 @property (strong) IBOutlet NSButton *btn1;
 
 @property (strong) IBOutlet NSButton *btn2;
+@property (strong) IBOutlet NSButton *rb1;
+@property (strong) IBOutlet NSButton *rb2;
 
 @end
 

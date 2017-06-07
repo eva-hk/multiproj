@@ -733,6 +733,8 @@
                     <connections>
                         <outlet property="btn1" destination="hfA-SL-9A4" id="701-wP-coJ"/>
                         <outlet property="lbl1" destination="TDK-3H-1cL" id="4U9-eH-gS8"/>
+                        <outlet property="rb1" destination="qo6-2K-bhO" id="asd-kA-ZwF"/>
+                        <outlet property="rb2" destination="fe8-1b-Vv2" id="tgL-BI-qM7"/>
                         <outlet property="rbtn1" destination="qo6-2K-bhO" id="CXZ-Lq-oAm"/>
                         <outlet property="rbtn2" destination="fe8-1b-Vv2" id="Jcj-KZ-nfi"/>
                     </connections>
