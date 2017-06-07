@@ -11,6 +11,7 @@
 @interface ViewController : NSViewController
 @property (strong) IBOutlet NSButton *btn1;
 
+@property (strong) IBOutlet NSButton *btn2;
 
 @end
 
