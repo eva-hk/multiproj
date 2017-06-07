@@ -687,13 +687,16 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-3H-1cL">
-                                <rect key="frame" x="171" y="123" width="190" height="89"/>
+                                <rect key="frame" x="171" y="175" width="190" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Git Multi 2" id="Q53-Iz-iCg">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="unp-df-U6p"/>
+                                </connections>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfA-SL-9A4">
                                 <rect key="frame" x="330" y="205" width="81" height="32"/>
@@ -703,10 +706,35 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qo6-2K-bhO">
+                                <rect key="frame" x="212" y="85" width="57" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" title="Radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="xoX-qd-5G1">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="radio_button_group:" target="XfG-lQ-9wD" id="NnO-7p-dNf"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fe8-1b-Vv2">
+                                <rect key="frame" x="280" y="85" width="57" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="radio" title="Radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="mC6-zG-5Lq">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="radio_button_group:" target="XfG-lQ-9wD" id="l0x-cA-WKT"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="btn1" destination="hfA-SL-9A4" id="701-wP-coJ"/>
+                        <outlet property="lbl1" destination="TDK-3H-1cL" id="4U9-eH-gS8"/>
+                        <outlet property="rbtn1" destination="qo6-2K-bhO" id="CXZ-Lq-oAm"/>
+                        <outlet property="rbtn2" destination="fe8-1b-Vv2" id="Jcj-KZ-nfi"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

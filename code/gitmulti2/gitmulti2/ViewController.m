@@ -16,6 +16,9 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)radio_button_group:(id)sender {
+    
+}
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
