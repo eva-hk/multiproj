@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @implementation ViewController
-
+int icnt=0;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -17,7 +17,8 @@
 }
 
 - (IBAction)radio_button_group:(id)sender {
-    
+    icnt++;
+    _lbl1.stringValue=[NSString stringWithFormat:@"%d",icnt];
 }
 
 - (void)setRepresentedObject:(id)representedObject {

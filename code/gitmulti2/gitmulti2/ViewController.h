@@ -10,6 +10,7 @@
 
 @interface ViewController : NSViewController
 @property (strong) IBOutlet NSButton *btn1;
+@property (strong) IBOutlet NSTextField *lbl1;
 
 @property (strong) IBOutlet NSButton *btn2;
 @property (strong) IBOutlet NSButton *rb1;
